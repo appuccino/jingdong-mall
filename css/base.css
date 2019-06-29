@@ -1,3 +1,7 @@
+img{
+	/*display: block;*/
+	vertical-align: top;/*解决图片底侧有空白缝隙的问题*/
+}
 .w{
 	width: 1190px;/*京东的版心是1190px*/
 	margin: 0 auto;
@@ -98,7 +102,7 @@ header{
 .logo a{
 	display: block;
 	height: 170px;
-	width: 170px;
+	width: 190px;
 	background: #fff url(../images/logo.png) no-repeat; 
 }
 /*搜索框*/
@@ -289,7 +293,7 @@ footer a{
 	font-size: 12px;
 }
 .copyright span{
-	margin:0 10px;
+	margin:0 6px;
 }
 .copyright div{
 	margin-top: 20px;
