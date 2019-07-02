@@ -8,6 +8,29 @@
 	color: #fff;
 	font-size: 14px;/*不是给文字的，给 反斜杠“/” 的*/
 	background-color: #6e6568;
+	position: relative;
+}
+.ad{
+	width: 250px;
+	height: 480px;
+	background-color: pink;
+	position: absolute;
+	top: 0;
+	left: -250px;
+}
+.ad:hover .ad-r{     /*鼠标经过ad这个广告大盒子的时候，里面的这个叫ad-r的图片恢复到原来的大小*/
+	width: 990px;
+}
+.ad-r{
+	position: absolute;
+	top: 0;
+	left: 250px;
+	z-index: 999;
+	width: 0;
+	height: 480px;
+	/*此图片做动画，所以给它添加过渡*/
+	background: url(../images/ad-r.png);
+	transition: all 0.5s;
 }
 .grid-col1 ul{
 	padding: 10px 0;
@@ -182,10 +205,22 @@
 	line-height: 23px;
 }
 .expand{
-	height: 209px;
-	background-color: skyblue;
+	height: 209px; 
+	background-color: #fff;
+	overflow: hidden;
+}
+.expand ul{
+	width: 195px;
 }
 .expand li{
 	width: 47px;
 	height: 69px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float:left;
+}
+.expand li a{
+	display: block;
+	padding-top: 15px;
+	text-align: center;
 }
